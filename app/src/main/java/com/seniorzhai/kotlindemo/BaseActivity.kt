@@ -11,4 +11,8 @@ open class BaseActivity : AppCompatActivity() {
     fun Context.toast(text: String, length: Int = Toast.LENGTH_SHORT) {
         Toast.makeText(this, text, length).show()
     }
+
+    fun Context.toast(text: Int, length: Int = Toast.LENGTH_SHORT) {
+        Toast.makeText(this, text, length).show()
+    }
 }
