@@ -21,6 +21,13 @@ open class class1 {
         Toast.makeText(context, text, length)
     }
 
+    // 自定义setter getter
+    var name: String = ""
+        get() = field.toUpperCase()
+        set(value) {
+            field = "Name$value"
+        }
+
 }
 
 class SupClass(name: String) : class1() {
