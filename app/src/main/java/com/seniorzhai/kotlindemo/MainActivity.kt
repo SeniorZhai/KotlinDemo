@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     class MyHolder : RecyclerView.Adapter<MyHolder.ViewHolder>() {
         override fun onBindViewHolder(holder: ViewHolder?, position: Int) {
-            holder?.textView!!.text = "1111"
+            holder?.textView!!.text = "Number$position" // 类似swift \()
         }
 
         override fun getItemCount(): Int {
