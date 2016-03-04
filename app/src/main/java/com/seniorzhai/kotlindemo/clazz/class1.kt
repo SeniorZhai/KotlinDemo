@@ -21,8 +21,6 @@ open class class1 {
         Toast.makeText(context, text, length)
     }
 
-    fun
-
 }
 
 class SupClass(name: String) : class1() {
