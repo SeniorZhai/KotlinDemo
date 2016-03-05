@@ -31,5 +31,8 @@ open class class1 {
 }
 
 class SupClass(name: String) : class1() {
-
+    // 伴随对象这个对象被这个类的所有实例共享，就像Java的静态属性方法
+    companion object {
+        public  val ID = "1234567"
+    }
 }
