@@ -39,7 +39,19 @@ class MainActivity : BaseActivity(), View.OnClickListener {
                         })
                     }, Action1 { e -> toast("$e.message") })
         }
+        initButton()
+    }
 
+    fun initButton() {
+        button1.setOnClickListener(object : View.OnClickListener {
+            override fun onClick(view: View?) {
+                toast("button1")
+            }
+        })
+        button2.setOnClickListener({ view -> toast("button2") })
+        button3.setOnClickListener({ toast("button3") })
+        button4.setOnClickListener() { toast("button4") }
+        button5.setOnClickListener { toast("button5") }
     }
 
     override fun onClick(view: View?) {
