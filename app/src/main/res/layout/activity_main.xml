@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,11 +22,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/button"
+    <com.seniorzhai.kotlindemo.view.ShadowLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="click" />
+        app:sl_cornerRadius="3dp"
+        app:sl_dx="1dp"
+        app:sl_dy="1dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="click" />
+    </com.seniorzhai.kotlindemo.view.ShadowLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
