@@ -51,7 +51,9 @@ class MainActivity : BaseActivity(), View.OnClickListener {
         button2.setOnClickListener({ view -> toast("button2") })
         button3.setOnClickListener({ toast("button3") })
         button4.setOnClickListener() { toast("button4") }
-        button5.setOnClickListener { toast("button5") }
+        button5.setOnClickListener {
+            toast("button5")
+        }
     }
 
     override fun onClick(view: View?) {
